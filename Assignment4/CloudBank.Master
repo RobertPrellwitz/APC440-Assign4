@@ -1,0 +1,58 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="CloudBank.Master.cs" Inherits="Assignment4.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            font-size: xx-large;
+            color: #0000FF;
+            border-left-color: #A0A0A0;
+            border-right-color: #C0C0C0;
+            border-top-color: #A0A0A0;
+            border-bottom-color: #C0C0C0;
+            padding: 1px;
+        }
+        .auto-style2 {
+            font-size: x-large;
+            color: #0000FF;
+        }
+        .auto-style3 {
+            width: 1019px;
+        }
+    </style>
+</head>
+<body style="width: 900px">
+    <form id="form1" runat="server">
+        <div>
+        </div>
+        <table style="width:100%;">
+            <tr>
+                <td class="auto-style3">&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style3">
+                    <asp:ImageButton ID="ImageButton1" runat="server" Height="77px" ImageUrl="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.pixelstalk.net%2Fwp-content%2Fuploads%2F2016%2F03%2FClouds-Wallpaper-Free-Download.jpg&amp;f=1&amp;nofb=1" Width="191px" />
+&nbsp;<span class="auto-style1"> CloudBank</span></td>
+                <td class="auto-style2">&nbsp;</td>
+                <td>
+                    <asp:Button ID="Button1" runat="server" BackColor="#99CCFF" BorderStyle="Solid" BorderWidth="3px" CssClass="auto-style2" Text="Log Out" border-radius="15px"/>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style3">&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+        </table>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>
