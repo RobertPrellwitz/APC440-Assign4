@@ -11,6 +11,8 @@ namespace Assignment4
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            DateTime todaysDate = DateTime.Now;
+            lblDate.Text = todaysDate.ToString("D") + " " + todaysDate.ToString("T");
 
         }
     }
