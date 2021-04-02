@@ -11,7 +11,24 @@ namespace Assignment4
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            BankAccount savingsAccount = new BankAccount();
+            BankAccount checkingAccount = new BankAccount();
+
+
+
+            savingsAccount.balance = 2500.50;
+            savingsAccount.name = "My savings";
+            checkingAccount.balance = 500.50;
+            checkingAccount.name = "My checking";
+
+            hypSavings.Text = savingsAccount.name;
+            lblSavingsBalance.Text = savingsAccount.balance.ToString("c");
+            HypChecking.Text = checkingAccount.name;
+            lblCheckingBalance.Text = checkingAccount.balance.ToString("C");
+            lblAccountTotal.Text = BankAccount.totalAccounts(savingsAccount.balance, checkingAccount.balance).ToString("C");
 
         }
+
+        
     }
 }

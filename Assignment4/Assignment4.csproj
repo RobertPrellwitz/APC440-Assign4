@@ -74,6 +74,7 @@
     <Content Include="Transactions.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BankAccount.cs" />
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
