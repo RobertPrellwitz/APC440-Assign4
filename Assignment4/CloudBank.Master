@@ -38,11 +38,11 @@
             </tr>
             <tr>
                 <td class="auto-style3">
-                    <asp:ImageButton ID="ImageButton1" runat="server" Height="77px" ImageUrl="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.pixelstalk.net%2Fwp-content%2Fuploads%2F2016%2F03%2FClouds-Wallpaper-Free-Download.jpg&amp;f=1&amp;nofb=1" Width="191px" />
+                    <asp:ImageButton ID="ImageButton1" runat="server" Height="77px" ImageUrl="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.pixelstalk.net%2Fwp-content%2Fuploads%2F2016%2F03%2FClouds-Wallpaper-Free-Download.jpg&amp;f=1&amp;nofb=1" Width="191px" OnClick="ImageButton1_Click" />
 &nbsp;<span class="auto-style1"> CloudBank</span></td>
                 <td class="auto-style2">&nbsp;</td>
                 <td>
-                    <asp:Button ID="Button1" runat="server" BackColor="#99CCFF" BorderStyle="Solid" BorderWidth="3px" CssClass="auto-style2" Text="Log Out" border-radius="15px"/>
+                    <asp:Button ID="Button1" runat="server" BackColor="#99CCFF" BorderStyle="Solid" BorderWidth="3px" CssClass="auto-style2" Text="Log Out" border-radius="15px" OnClick="Button1_Click"/>
                 </td>
             </tr>
             <tr>
