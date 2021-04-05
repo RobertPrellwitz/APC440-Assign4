@@ -8,7 +8,11 @@ using System.Web.UI.WebControls;
 namespace Assignment4
 {
     public partial class Account : System.Web.UI.Page
+
     {
+        bool user = false;
+        bool pass = false;
+
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -21,8 +25,8 @@ namespace Assignment4
             String userName = txtUserName.Text;
             String password = txtPassword.Text;
 
-            bool user = userName.Equals("admin");  // == "admin";
-            bool pass = password.Equals("SecretP@ssword");  // == "SecretP@ssword";
+            user = userName.Equals("admin");  // == "admin";
+            pass = password.Equals("SecretP@ssword");  // == "SecretP@ssword";
             lblError.Text = (pass && user) ? string.Empty  : "Invalid Entry";
 
             if(user && pass)
