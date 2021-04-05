@@ -21,7 +21,7 @@ namespace Assignment4
 
         protected void ImageButton1_Click(object sender, ImageClickEventArgs e)
         {
-            Response.Redirect("Account.aspx");
+            Response.Redirect("Default.aspx");
         }
     }
 }

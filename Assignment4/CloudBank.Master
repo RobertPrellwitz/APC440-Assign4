@@ -8,21 +8,24 @@
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
     <style type="text/css">
-        .auto-style1 {
-            font-size: xx-large;
-            color: #0000FF;
-            border-left-color: #A0A0A0;
-            border-right-color: #C0C0C0;
-            border-top-color: #A0A0A0;
-            border-bottom-color: #C0C0C0;
-            padding: 1px;
-        }
         .auto-style2 {
             font-size: x-large;
             color: #0000FF;
+            border-radius: 15px;
+            background-color: #99CCFF;
+            border: solid;
+            border-color:darkblue;
+            border-width: 3px;
         }
         .auto-style3 {
             width: 1019px;
+        }
+        body {
+            background-color:lightsteelblue
+        }
+        .auto-style5 {
+            font-size: x-large;
+            color: #0000FF;
         }
     </style>
 </head>
@@ -39,10 +42,10 @@
             <tr>
                 <td class="auto-style3">
                     <asp:ImageButton ID="ImageButton1" runat="server" Height="77px" ImageUrl="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.pixelstalk.net%2Fwp-content%2Fuploads%2F2016%2F03%2FClouds-Wallpaper-Free-Download.jpg&amp;f=1&amp;nofb=1" Width="191px" OnClick="ImageButton1_Click" />
-&nbsp;<span class="auto-style1"> CloudBank</span></td>
-                <td class="auto-style2">&nbsp;</td>
+                        &nbsp;<span> <span class="auto-style5">CloudBank</span></span></td>
+                <td>&nbsp;</td>
                 <td>
-                    <asp:Button ID="Button1" runat="server" BackColor="#99CCFF" BorderStyle="Solid" BorderWidth="3px" CssClass="auto-style2" Text="Log Out" border-radius="15px" OnClick="Button1_Click"/>
+                    <asp:Button ID="Button1" runat="server" CssClass="auto-style2" Text="Log Out" OnClick="Button1_Click"/>
                 </td>
             </tr>
             <tr>
