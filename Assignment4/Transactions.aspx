@@ -35,19 +35,19 @@
             font-size: medium;
             color: #0000FF;
         }
-        .auto-style21 {
-            width: 170px;
-        }
-        .auto-style22 {
-            font-weight: bold;
-            font-size: medium;
-            color: #0000FF;
-            width: 170px;
-        }
-        .auto-style23 {
-            height: 31px;
-            width: 170px;
-        }
+    .auto-style21 {
+        width: 170px;
+    }
+    .auto-style22 {
+        font-weight: bold;
+        font-size: medium;
+        color: #0000FF;
+        width: 170px;
+    }
+    .auto-style23 {
+        height: 31px;
+        width: 170px;
+    }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -97,5 +97,24 @@
                 </p>
             </td>
         </tr>
+        <tr>
+            <td class="auto-style23">
+                &nbsp;</td>
+            <td class="auto-style16">
+                &nbsp;</td>
+            <td class="auto-style16">
+                &nbsp;</td>
+        </tr>
+        <tr>
+            <td class="auto-style23">
+                &nbsp;</td>
+            <td class="auto-style16">
+                <asp:Table ID="tblTranaction" runat="server">
+                </asp:Table>
+            </td>
+            <td class="auto-style16">
+                &nbsp;</td>
+        </tr>
     </table>
+  
 </asp:Content>

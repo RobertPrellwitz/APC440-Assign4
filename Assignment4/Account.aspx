@@ -51,11 +51,11 @@
             color: #008080;
         }
         .auto-style13 {
-            height: 31px;
-            font-size: x-large;
-            color: #0000FF;
-            width: 151px;
-        }
+        height: 31px;
+        font-size: x-large;
+        color: #0000FF;
+        width: 151px;
+    }
         .auto-style14 {
             text-align: center;
             border-bottom-left-radius,: 15px;
@@ -107,8 +107,8 @@
             color: #008080;
         }
         .auto-style22 {
-            width: 151px;
-        }
+        width: 151px;
+    }
         .auto-style23 {
             width: 235px;
             height: 31px;
