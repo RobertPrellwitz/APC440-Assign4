@@ -17,26 +17,26 @@ namespace Assignment4
             StringBuilder transValue = new StringBuilder();
             StringBuilder Dates = new StringBuilder();
             DateTime todaysDate = DateTime.Now;
-            lblDate.Text = todaysDate.ToString("D") + " " + todaysDate.ToString("T");
+            lblDate.Text = "Updated " + todaysDate.ToString("D") + " " + todaysDate.ToString("T");
             
             
-            string[] vendor = { "Starbucks", "Kwik Trip", "Sendiks", "Target", "Cheel" };
+            string[] vendor = { "Starbucks", "Kwik Trip", "Sendiks", "Target", "Cheel", "Sprocket", "Fox Town Brewing" };
             double transaction;
             int vend;
             DateTime transDate = DateTime.Now;
             for (int i = 0; i < 25; i++) {
-                transaction = rand.NextDouble()*35;
-                vend = rand.Next(0, 4);
+                transaction = rand.NextDouble()*35*(-1);
+                vend = rand.Next(0, 6);
 
-                vendors = vendors.Append("<br> " + vendor[vend].ToString());
-                transValue = transValue.Append("<br>" + transaction.ToString("C"));
-                Dates = Dates.Append("<br>" + (todaysDate.AddDays(-i)).ToString("f"));
+                //vendors = vendors.Append(  vendor[vend].ToString() + "<hr color='blue'>");
+                transValue = transValue.Append( "<br>" + transaction.ToString("C") + "<br> <br>");
+                Dates = Dates.Append((todaysDate.AddDays(-i)).ToString("d") + "<br>"  + vendor[vend].ToString() + "<br> <br>");
 
 
             }
 
             lblTransAmount.Text = transValue.ToString();
-            lblDescription.Text = vendors.ToString();
+            //lblDescription.Text = vendors.ToString();
             lblTransDate.Text = Dates.ToString();
         
 
