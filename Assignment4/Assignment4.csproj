@@ -67,6 +67,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\CloudBank.mdf" />
+    <Content Include="App_Data\CloudBank_log.ldf">
+      <DependentUpon>CloudBank.mdf</DependentUpon>
+    </Content>
     <Content Include="Default.aspx" />
     <Content Include="Account.aspx" />
     <Content Include="Global.asax" />
@@ -119,7 +123,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
