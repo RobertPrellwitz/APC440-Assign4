@@ -37,7 +37,6 @@ namespace Assignment4
                 Dates = Dates.Append((todaysDate.AddDays(-i)).ToString("d") + "<br>"  + vendor[vend].ToString() + "<br> <br>");
 
               
-
             }   
 
 
