@@ -60,16 +60,27 @@
         <tr>
             <td>&nbsp;</td>
             <td>
-                <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CellPadding="4" DataKeyNames="TransactionIID" DataSourceID="SqlDataSource1" ForeColor="#333333" GridLines="None" Width="750px">
+                <asp:GridView ID="GridView1" runat="server" AllowSorting="True" AutoGenerateColumns="False" CellPadding="4" DataKeyNames="TransactionID" DataSourceID="SqlDataSource1" ForeColor="#333333" GridLines="None" Width="754px">
                     <AlternatingRowStyle BackColor="White" />
                     <Columns>
-                        <asp:BoundField DataField="TransactionIID" HeaderText="TransactionIID" InsertVisible="False" ReadOnly="True" SortExpression="TransactionIID" />
-                        <asp:BoundField DataField="Date" DataFormatString="{0:d}" HeaderText="Date" SortExpression="Date">
+                        <asp:BoundField DataField="TransactionID" HeaderText="TransactionID" InsertVisible="False" ReadOnly="True" SortExpression="TransactionID">
+                        <HeaderStyle Font-Bold="True" HorizontalAlign="Center" />
                         <ItemStyle HorizontalAlign="Center" />
                         </asp:BoundField>
-                        <asp:BoundField DataField="Description" HeaderText="Description" SortExpression="Description" />
-                        <asp:BoundField DataField="Vendor" HeaderText="Vendor" SortExpression="Vendor" />
+                        <asp:BoundField DataField="Date" DataFormatString="{0:d}" HeaderText="Date" SortExpression="Date">
+                        <HeaderStyle HorizontalAlign="Center" />
+                        <ItemStyle HorizontalAlign="Center" />
+                        </asp:BoundField>
+                        <asp:BoundField DataField="Description" HeaderText="Description" SortExpression="Description">
+                        <HeaderStyle HorizontalAlign="Center" />
+                        <ItemStyle HorizontalAlign="Center" Wrap="False" />
+                        </asp:BoundField>
+                        <asp:BoundField DataField="Vendor" HeaderText="Vendor" SortExpression="Vendor">
+                        <HeaderStyle Font-Bold="True" HorizontalAlign="Center" />
+                        <ItemStyle HorizontalAlign="Center" />
+                        </asp:BoundField>
                         <asp:BoundField DataField="TransactionAmount" DataFormatString="{0:c}" HeaderText="TransactionAmount" SortExpression="TransactionAmount">
+                        <HeaderStyle Font-Bold="True" HorizontalAlign="Center" />
                         <ItemStyle HorizontalAlign="Center" />
                         </asp:BoundField>
                     </Columns>
@@ -84,7 +95,7 @@
                     <SortedDescendingCellStyle BackColor="#E9EBEF" />
                     <SortedDescendingHeaderStyle BackColor="#4870BE" />
                 </asp:GridView>
-                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:CloudBankConnectionString %>" SelectCommand="SELECT [TransactionIID], [Date], [Description], [Vendor], [TransactionAmount] FROM [REPTransactions] WHERE ([REPAccountID] = @REPAccountID)">
+                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:CloudBankConnectionString %>" SelectCommand="SELECT [TransactionID], [Date], [Description], [Vendor], [TransactionAmount] FROM [REPTransactions] WHERE ([REPAccountID] = @REPAccountID)">
                     <SelectParameters>
                         <asp:Parameter DefaultValue="1003" Name="REPAccountID" Type="Int32" />
                     </SelectParameters>

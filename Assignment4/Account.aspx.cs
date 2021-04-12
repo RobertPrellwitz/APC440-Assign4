@@ -26,6 +26,8 @@ namespace Assignment4
             HypChecking.Text = checkingAccount.name;
             lblCheckingBalance.Text = checkingAccount.balance.ToString("C");
             lblAccountTotal.Text = BankAccount.totalAccounts(savingsAccount.balance, checkingAccount.balance).ToString("C");
+            lblFirstName.Text = "Zaphod";
+            lblLastName.Text = "Beeblebrox";
 
         }
 
