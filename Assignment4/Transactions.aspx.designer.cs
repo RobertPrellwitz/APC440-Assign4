@@ -24,30 +24,30 @@ namespace Assignment4
         protected global::System.Web.UI.WebControls.Label lblDate;
 
         /// <summary>
-        /// lblTransDate control.
+        /// GridView1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblTransDate;
+        protected global::System.Web.UI.WebControls.GridView GridView1;
 
         /// <summary>
-        /// lblTransAmount control.
+        /// CloudBank control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblTransAmount;
+        protected global::System.Web.UI.WebControls.SqlDataSource CloudBank;
 
         /// <summary>
-        /// tblTranaction control.
+        /// btnAccounts control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Table tblTranaction;
+        protected global::System.Web.UI.WebControls.LinkButton btnAccounts;
     }
 }

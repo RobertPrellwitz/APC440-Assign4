@@ -40,13 +40,17 @@ namespace Assignment4
             }   
 
 
-            lblTransAmount.Text = transValue.ToString();
+            //lblTransAmount.Text = transValue.ToString();
             //lblDescription.Text = vendors.ToString();
-            lblTransDate.Text = Dates.ToString();
+            //lblTransDate.Text = Dates.ToString();
 
            //tblTranaction = transactions;
 
         }
 
+        protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
