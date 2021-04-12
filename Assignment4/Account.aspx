@@ -133,7 +133,11 @@
     <table class="auto-style8">
         <tr>
             <td class="auto-style22">&nbsp;</td>
-            <td class="auto-style9">&nbsp;</td>
+            <td class="auto-style9">Welcome
+                <asp:Label ID="lblFirstName" runat="server" Text="First Name"></asp:Label>
+&nbsp;
+                <asp:Label ID="lblLastName" runat="server" Text="Last Name"></asp:Label>
+            </td>
             <td class="auto-style11">&nbsp;</td>
         </tr>
         <tr>
@@ -148,7 +152,7 @@
             <td class="auto-style13"></td>
             <td class="auto-style10">
                 <p class="auto-style7">
-                    <asp:HyperLink ID="hypSavings" runat="server" NavigateUrl="~/Transactions.aspx">SavingsAccount</asp:HyperLink>
+                    <asp:HyperLink ID="hypSavings" runat="server" NavigateUrl="~/Trans2Saving.aspx">SavingsAccount</asp:HyperLink>
                 </p>
             </td>
             <td class="auto-style19">
@@ -175,6 +179,23 @@
             <td class="auto-style23">
                 <asp:Label ID="lblAccountTotal" runat="server" Text="Label" CssClass="auto-style25"></asp:Label>
             </td>
+        </tr>
+        <tr>
+            <td class="auto-style22">&nbsp;</td>
+            <td class="auto-style4">
+                &nbsp;</td>
+            <td class="auto-style23">
+                &nbsp;</td>
+        </tr>
+        <tr>
+            <td class="auto-style22">&nbsp;</td>
+            <td class="auto-style4">
+                <asp:FormView ID="FormView1" runat="server" DataSourceID="CloudBankData">
+                </asp:FormView>
+                <asp:SqlDataSource ID="CloudBankData" runat="server"></asp:SqlDataSource>
+            </td>
+            <td class="auto-style23">
+                &nbsp;</td>
         </tr>
     </table>
 

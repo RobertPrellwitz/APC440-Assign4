@@ -14,7 +14,7 @@ namespace Assignment4
             BankAccount savingsAccount = new BankAccount();
             BankAccount checkingAccount = new BankAccount();
 
-
+            
 
             savingsAccount.balance = 2500.50;
             savingsAccount.name = "My savings";
